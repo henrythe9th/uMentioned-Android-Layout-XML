@@ -1,0 +1,224 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_background"
+    android:gravity="top"
+    tools:context=".MainActivity" >
+
+        <RelativeLayout
+            android:id="@+id/header_bar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/header_border"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/header_logo"
+                android:layout_width="152dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/umentioned_header_icon"
+                android:src="@drawable/bluelogo" />
+
+            <TextView
+                android:id="@+id/cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:text="@string/cancel_button"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/post_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="18dp"
+                android:text="@string/post_button"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/confessions_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+
+            <ImageView
+                android:id="@+id/white_frame_stack"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/grey_confession_overlay"
+                android:layout_alignRight="@+id/grey_confession_overlay"
+                android:layout_below="@+id/icons_container "
+                android:layout_marginTop="-2dp"
+                android:contentDescription="@string/stack_of_picture_frames"
+                android:scaleType="fitXY"
+                android:src="@drawable/stack" />
+
+            <ImageView
+                android:id="@+id/white_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="70dp"
+                android:contentDescription="@string/white_photo_frame"
+                android:src="@drawable/rounded_photo_frame" />
+
+            <View
+                android:id="@+id/grey_confession_overlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="150dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="90dp"
+                android:background="@color/dark_grey_border"
+                android:contentDescription="@string/confession_grey_text_container" />
+
+            <EditText
+                android:id="@+id/confession_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/grey_confession_overlay"
+                android:layout_alignLeft="@+id/grey_confession_overlay"
+                android:layout_alignRight="@+id/grey_confession_overlay"
+                android:layout_alignTop="@+id/grey_confession_overlay"
+                android:gravity="center"
+                android:hint="@string/confession_text_hint"
+                android:inputType="textMultiLine"
+                android:textColorHint="@color/navy_blue"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:id="@+id/icons_container "
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/white_frame"
+                android:layout_alignLeft="@+id/white_frame"
+                android:layout_alignRight="@+id/white_frame"
+                android:layout_below="@+id/confession_text"
+                android:gravity="center_horizontal"
+                android:scaleX="0.6"
+                android:scaleY="0.6" >
+
+                <ImageView
+                    android:id="@+id/photos_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignTop="@+id/camera_icon"
+                    android:layout_marginLeft="53dp"
+                    android:layout_toRightOf="@+id/camera_icon"
+                    android:contentDescription="@string/choose_photo"
+                    android:src="@drawable/photos" />
+
+                <ImageView
+                    android:id="@+id/camera_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="93dp"
+                    android:layout_marginLeft="57dp"
+                    android:layout_toRightOf="@+id/colors_icon_text"
+                    android:contentDescription="@string/camera_icon"
+                    android:src="@drawable/camera" />
+
+                <ImageView
+                    android:id="@+id/colors_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignRight="@+id/colors_icon_text"
+                    android:layout_alignTop="@+id/camera_icon"
+                    android:contentDescription="@string/color_of_background"
+                    android:src="@drawable/colors" />
+
+                <TextView
+                    android:id="@+id/colors_icon_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/colors_icon"
+                    android:text="@string/color_icon_text"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/navy_blue"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/camera_icon_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/colors_icon_text"
+                    android:layout_alignBottom="@+id/colors_icon_text"
+                    android:layout_alignLeft="@+id/camera_icon"
+                    android:text="@string/camera_icon_text"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/navy_blue"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/photos_icon_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/photos_icon"
+                    android:layout_below="@+id/photos_icon"
+                    android:text="@string/photo_icon_text"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/navy_blue"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/grey_confession_overlay"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:scaleX="0.6"
+                android:scaleY="0.6" >
+
+                <ImageView
+                    android:id="@+id/filter_three_image"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="20dp"
+                    android:contentDescription="@string/third_filter_image"
+                    android:src="@drawable/filter_three" />
+
+                <ImageView
+                    android:id="@+id/filter_four_image"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="20dp"
+                    android:contentDescription="@string/fourth_filter_image"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/filter_four" />
+
+                <ImageView
+                    android:id="@+id/filter_two_image"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="20dp"
+                    android:contentDescription="@string/second_filter_image"
+                    android:src="@drawable/filter_two" />
+
+                <ImageView
+                    android:id="@+id/filter_one_image"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:contentDescription="@string/first_filter_image"
+                    android:src="@drawable/filter_one" />
+            </LinearLayout>
+            
+        </RelativeLayout>
+
+</RelativeLayout>

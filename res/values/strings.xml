@@ -23,9 +23,45 @@
     <string name="title_activity_hello">HelloActivity</string>
     <string name="existing_user_label">""Existing User? \n Log In"</string>
     <string name="title_activity_error">ErrorActivity</string>
-    
     <string name="error_message">"Hm... either you made a typo, or we haven\'t spread to your school yet.Want uMentioned? Type your full school name below and let us know!"</string>
-    
     <string name="your_school_name">Your school name</string>
+    <string name="title_activity_categories">Categories</string>
+    <string name="umentioned_center_logo">uMentioned center logo</string>
+    <string name="umentioned_slogan">The fastest way to stay connected on campus</string>
+    <string name="main_page_photo">Main page photo background</string>
+    <string name="log_in">Or Log in</string>
+    <string name="subscribe_text">What would you like to subscribe to? We will notify you of new content.</string>
+    <string name="subscribe_done_button">All done!</string>
+    <string name="view_of_picture">View of picture</string>
+    <string name="navigation_bar">Navigation bar</string>
+    <string name="create_a_new_mention">Create a new mention</string>
+    <string name="sample_text">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "</string>
+    <string name="confessions_icon">Confessions icon</string>
+    <string name="number_of_likes">Number of likes</string>
+    <string name="name_on_mention">Anonymous</string>
+    <string name="date_today">Today</string>
+    <string name="confessions_icon_heading">CONFESSIONS</string>
+    <string name="heart_icon_heading">LIKES</string>
+    <string name="title_activity_inbox">Inbox</string>
+    <string name="title_activity_inbox_page">InboxPage</string>
+    <string name="title_activity_compose_page">ComposePage</string>
+    <string name="umentioned_header_icon">uMentioned Header</string>
+    <string name="back_button">Back button</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="post_button">Post</string>
+    <string name="white_photo_frame">White photo frame</string>
+    <string name="confession_text_hint">Confession: What\'s on your mind?</string>
+    <string name="confession_grey_text_container">Grey confession text container</string>
+    <string name="color_of_background">Change color of background</string>
+    <string name="camera_icon">Take a photo</string>
+    <string name="choose_photo">Choose a photo from gallery</string>
+    <string name="color_icon_text">COLORS</string>
+    <string name="camera_icon_text">CAMERA</string>
+    <string name="photo_icon_text">PHOTOS</string>
+    <string name="stack_of_picture_frames">Stack of picture frames</string>
+    <string name="first_filter_image">First filter image</string>
+    <string name="second_filter_image">Second filter image</string>
+    <string name="third_filter_image">Third filter image</string>
+    <string name="fourth_filter_image">fourth_filter_image</string>
 
 </resources>

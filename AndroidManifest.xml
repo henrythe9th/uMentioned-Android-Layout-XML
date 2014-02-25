@@ -38,6 +38,22 @@
             android:name="com.kj.newmainpage.Addschool"
             android:label="@string/title_activity_error" >
         </activity>
+        <activity
+            android:name="com.kj.newmainpage.Categories"
+            android:label="@string/title_activity_categories" >
+        </activity>
+        <activity
+            android:name="com.kj.newmainpage.Inbox"
+            android:label="@string/title_activity_inbox" >
+        </activity>
+        <activity
+            android:name="com.kj.newmainpage.InboxPage"
+            android:label="@string/title_activity_inbox_page" >
+        </activity>
+        <activity
+            android:name="com.kj.newmainpage.ComposePage"
+            android:label="@string/title_activity_compose_page" >
+        </activity>
     </application>
 
 </manifest>

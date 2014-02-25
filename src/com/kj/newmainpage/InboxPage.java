@@ -1,25 +1,25 @@
 package com.kj.newmainpage;
 
+import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
-import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 
-public class Addschool extends Activity {
+public class InboxPage extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.addschool);
+		setContentView(R.layout.activity_inbox_page);
 		
-		Button okButton = (Button)findViewById(R.id.okayButton);
-		okButton.setOnClickListener(new View.OnClickListener() {
+		Button button = (Button)findViewById(R.id.create_new_button1);
+		button.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
-				Intent intent = new Intent(Addschool.this,Categories.class);
+				Intent intent = new Intent(InboxPage.this,ComposePage.class);
 				startActivity(intent);
 			}
 		});
@@ -28,7 +28,7 @@ public class Addschool extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.error, menu);
+		getMenuInflater().inflate(R.menu.inbox_page, menu);
 		return true;
 	}
 

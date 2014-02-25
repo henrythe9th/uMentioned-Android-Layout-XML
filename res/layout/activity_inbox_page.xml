@@ -1,0 +1,182 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/grey_background" >
+    
+    <RelativeLayout
+        android:id="@+id/header_bar1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header_border"
+        android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/header_logo1"
+                android:layout_width="152dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/umentioned_header_icon"
+                android:src="@drawable/bluelogo" />
+
+            <ImageView
+                android:id="@+id/menu_button1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:contentDescription="@string/navigation_bar"
+                android:src="@drawable/ic_menu" />
+
+            <ImageView
+                android:id="@+id/create_new_button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="18dp"
+                android:contentDescription="@string/create_a_new_mention"
+                android:src="@drawable/ic_new" />
+
+        </RelativeLayout>
+        
+    	<RelativeLayout
+    	    android:id="@+id/confessions_container"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="match_parent"
+    	    android:layout_alignParentLeft="true"
+    	    android:layout_alignParentRight="true"
+    	    android:layout_alignParentTop="true" >
+
+            <ImageView
+                android:id="@+id/white_frame1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="70dp"
+                android:contentDescription="@string/white_photo_frame"
+                android:src="@drawable/rounded_photo_frame" />
+
+
+
+            <ImageView
+                android:id="@+id/white_frame_stack1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="39dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="-3dp"
+                android:contentDescription="@string/stack_of_picture_frames"
+                android:scaleType="fitXY"
+                android:src="@drawable/stack" />
+            
+            <RelativeLayout
+                android:id="@+id/picture_text_container1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/white_frame_stack1"
+                android:layout_alignLeft="@+id/white_frame1"
+                android:layout_alignRight="@+id/white_frame1"
+                android:layout_alignTop="@+id/white_frame1" >
+                
+                <ImageView
+                    android:id="@+id/picture_view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="60dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:contentDescription="@string/view_of_picture"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/background" />
+
+            	<TextView
+            	    android:id="@+id/text_sample_content1"
+            	    android:layout_width="wrap_content"
+            	    android:layout_height="wrap_content"
+            	    android:layout_alignLeft="@+id/picture_view1"
+            	    android:layout_alignRight="@+id/picture_view1"
+            	    android:layout_centerVertical="true"
+            	    android:gravity="center"
+            	    android:shadowColor="@color/black"
+            	    android:text="@string/sample_text"
+            	    android:textAppearance="?android:attr/textAppearanceMedium"
+            	    android:textColor="@color/white"
+            	    android:textStyle="bold" />
+
+	            <ImageView
+	                android:id="@+id/confessions_icon1"
+	                android:layout_width="20dp"
+	                android:layout_height="20dp"
+	                android:layout_alignLeft="@+id/picture_view1"
+	                android:layout_alignParentBottom="true"
+	                android:layout_marginBottom="28dp"
+	                android:layout_marginLeft="30dp"
+	                android:contentDescription="@string/confessions_icon"
+	                android:src="@drawable/ic_confessions" />
+
+	            <TextView
+	                android:id="@+id/username_on_card1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignTop="@+id/confessions_icon1"
+	                android:layout_centerHorizontal="true"
+	                android:text="@string/name_on_mention" />
+
+	            <TextView
+	                android:id="@+id/date_on_card1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_below="@+id/username_on_card1"
+	                android:layout_centerHorizontal="true"
+	                android:text="@string/date_today"
+	                android:textSize="12sp" />
+
+	            <TextView
+	                android:id="@+id/confession_icon_heading1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignLeft="@+id/picture_view1"
+	                android:layout_below="@+id/heart_icon1"
+	                android:text="@string/confessions_icon_heading"
+	                android:textColor="@color/dark_grey_border"
+	                android:textSize="12sp" />
+
+	            <ImageView
+	                android:id="@+id/heart_icon1"
+	                android:layout_width="20dp"
+	                android:layout_height="20dp"
+	                android:layout_alignRight="@+id/picture_view1"
+	                android:layout_alignTop="@+id/username_on_card1"
+	                android:layout_marginRight="24dp"
+	                android:contentDescription="@string/number_of_likes"
+	                android:src="@drawable/ic_heart" />
+
+	            <TextView
+	                android:id="@+id/heart_icon_heading1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignBaseline="@+id/confession_icon_heading1"
+	                android:layout_alignBottom="@+id/confession_icon_heading1"
+	                android:layout_alignRight="@+id/heart_icon1"
+	                android:layout_marginRight="-7dp"
+	                android:text="@string/heart_icon_heading"
+	                android:textColor="@color/dark_grey_border"
+	                android:textSize="12sp" />
+   
+       		</RelativeLayout>
+       		
+	</RelativeLayout>
+	
+</RelativeLayout>

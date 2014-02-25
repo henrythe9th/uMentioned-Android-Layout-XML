@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NewMainPage</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="new_app">New App</string>
+
+    <color name="grey">#ecf0f1</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey_background">#ecf0f1</color>
+    <color name="black">#000000</color>
+    <color name="dark_grey_border">#D4D4D4</color>
+    <color name="navy_blue">#2d3e50</color>
+    <color name="light_blue">#5b7fa2</color>
+    <color name="header_bar">#ecf0f1</color>
+
+    <string name="subTitle">"The fastest way to stay \n connected on campus"</string>
+    <string name="log_in_label">or Log In</string>
+    <string name="edittext_hint_label">What\'s your school?</string>
+    <string name="title_activity_view_card">ViewCardActivity</string>
+    <string name="title_activity_new_view">NewViewActivity</string>
+    <string name="title_activity_hello">HelloActivity</string>
+    <string name="existing_user_label">""Existing User? \n Log In"</string>
+    <string name="title_activity_error">ErrorActivity</string>
+    
+    <string name="error_message">"Hm... either you made a typo, or we haven\'t spread to your school yet.Want uMentioned? Type your full school name below and let us know!"</string>
+    
+    <string name="your_school_name">Your school name</string>
+
+</resources>

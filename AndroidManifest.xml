@@ -22,14 +22,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.kj.newmainpage.NewViewActivity"
-            android:label="@string/title_activity_new_view"
-            android:parentActivityName="com.kj.newmainpage.Landingpage1" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.kj.newmainpage.MainActivity" />
-        </activity>
+        
         <activity
             android:name="com.kj.newmainpage.Landingpage2"
             android:label="@string/title_activity_hello" >
@@ -53,6 +46,14 @@
         <activity
             android:name="com.kj.newmainpage.ComposePage"
             android:label="@string/title_activity_compose_page" >
+        </activity>
+        <activity
+            android:name="com.kj.newmainpage.Settings"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name="com.kj.newmainpage.SettingsFragment"
+            android:label="@string/title_activity_settings_fragment" >
         </activity>
     </application>
 

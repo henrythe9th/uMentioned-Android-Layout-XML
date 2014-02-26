@@ -63,5 +63,25 @@
     <string name="second_filter_image">Second filter image</string>
     <string name="third_filter_image">Third filter image</string>
     <string name="fourth_filter_image">fourth_filter_image</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_settings_fragment">SettingsFragment</string>
+    <string name ="category_label">Categories</string>
+    <string name ="freq_label">Push Frequency</string>
+    <string name ="spotted_label">Spotted</string>
+    <string name ="confessions_label">Confessions</string>
+    <string name ="overheard_label">Overheard</string>
+    <string name ="spotted_key">spottedKey</string>
+    <string name ="confessions_key">ConfessionsKey</string>
+    <string name ="overheard_key">OverheardKey</string>
+    <string name ="settings_label">Settings</string>
+    
+    <string name ="select">Choose an option</string>
+    
+    <string-array name = "notifications_array">
+        <item>Always</item>
+        <item>Hourly</item>
+        <item>Occasionally</item>
+        <item>Daily</item>
+    </string-array>
 
 </resources>

@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_background"
+    tools:context=".Settings" >
+
+    <RelativeLayout
+        android:id="@+id/header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header_border"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/settings_logo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/settings_label"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/choose1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_bar" >
+
+        <fragment
+            android:id="@+id/list"
+            android:name="com.kj.settings.SettingsFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choose1" >
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:entries="@array/notifications_array"
+            android:prompt="@string/select" />
+    </RelativeLayout>
+
+</RelativeLayout>

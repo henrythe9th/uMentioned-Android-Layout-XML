@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:key="pref_key_storage_settings"
+        android:title="@string/category_label" >
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/spotted_key"
+            android:layout="@layout/custom_check_layout"
+            android:title="@string/spotted_label" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/confessions_key"
+            android:layout="@layout/custom_check_layout"
+            android:title="@string/confessions_label" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/overheard_key"
+            android:layout="@layout/custom_check_layout"
+            android:title="@string/overheard_label" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="pref_key_storage_settings"
+        android:title="@string/freq_label" >
+    </PreferenceCategory>
+
+</PreferenceScreen>

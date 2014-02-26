@@ -8,6 +8,9 @@
 package com.kj.newmainpage;
 
 public final class R {
+    public static final class array {
+        public static final int notifications_array=0x7f070000;
+    }
     public static final class attr {
     }
     public static final class color {
@@ -59,75 +62,83 @@ public final class R {
         public static final int umentioned_logo=0x7f020019;
     }
     public static final class id {
-        public static final int action_settings=0x7f090032;
-        public static final int back_button=0x7f090003;
-        public static final int camera_icon=0x7f09000e;
-        public static final int camera_icon_text=0x7f090011;
-        public static final int cancelButton=0x7f09002c;
-        public static final int cancel_button=0x7f090005;
-        public static final int colors_icon=0x7f090010;
-        public static final int colors_icon_text=0x7f09000f;
-        public static final int confession_icon_heading1=0x7f090023;
-        public static final int confession_text=0x7f09000c;
-        public static final int confessions_container=0x7f090007;
-        public static final int confessions_icon1=0x7f090020;
-        public static final int content_container=0x7f090026;
-        public static final int create_new_button1=0x7f09001a;
-        public static final int date_on_card1=0x7f090022;
-        public static final int doneButton=0x7f090004;
-        public static final int error_message1=0x7f09002a;
-        public static final int filter_four_image=0x7f090014;
-        public static final int filter_one_image=0x7f090016;
-        public static final int filter_three_image=0x7f090013;
-        public static final int filter_two_image=0x7f090015;
-        public static final int grey_confession_overlay=0x7f090009;
-        public static final int grey_error_message=0x7f090029;
-        public static final int header_bar=0x7f090001;
-        public static final int header_bar1=0x7f090017;
-        public static final int header_logo=0x7f090002;
-        public static final int header_logo1=0x7f090018;
-        public static final int heart_icon1=0x7f090024;
-        public static final int heart_icon_heading1=0x7f090025;
-        public static final int icons_container =0x7f09000a;
-        public static final int logIn=0x7f090030;
-        public static final int logInLabel=0x7f090031;
-        public static final int logoImage=0x7f090027;
-        public static final int menu_button1=0x7f090019;
-        public static final int newInput=0x7f09002b;
-        public static final int okayButton=0x7f09002d;
-        public static final int photos_icon=0x7f09000d;
-        public static final int photos_icon_text=0x7f090012;
-        public static final int picture_text_container1=0x7f09001d;
-        public static final int picture_view1=0x7f09001e;
-        public static final int post_button=0x7f090006;
-        public static final int schoolInput=0x7f09002f;
-        public static final int stack1=0x7f09002e;
-        public static final int subTitle=0x7f090028;
-        public static final int subscribeText=0x7f090000;
-        public static final int text_sample_content1=0x7f09001f;
-        public static final int username_on_card1=0x7f090021;
-        public static final int white_frame=0x7f09000b;
-        public static final int white_frame1=0x7f09001b;
-        public static final int white_frame_stack=0x7f090008;
-        public static final int white_frame_stack1=0x7f09001c;
+        public static final int action_settings=0x7f0a0036;
+        public static final int back_button=0x7f0a0003;
+        public static final int camera_icon=0x7f0a000e;
+        public static final int camera_icon_text=0x7f0a0011;
+        public static final int cancelButton=0x7f0a0030;
+        public static final int cancel_button=0x7f0a0005;
+        public static final int choose1=0x7f0a0027;
+        public static final int colors_icon=0x7f0a0010;
+        public static final int colors_icon_text=0x7f0a000f;
+        public static final int confession_icon_heading1=0x7f0a0023;
+        public static final int confession_text=0x7f0a000c;
+        public static final int confessions_container=0x7f0a0007;
+        public static final int confessions_icon1=0x7f0a0020;
+        public static final int content_container=0x7f0a002a;
+        public static final int create_new_button1=0x7f0a001a;
+        public static final int date_on_card1=0x7f0a0022;
+        public static final int doneButton=0x7f0a0004;
+        public static final int error_message1=0x7f0a002e;
+        public static final int filter_four_image=0x7f0a0014;
+        public static final int filter_one_image=0x7f0a0016;
+        public static final int filter_three_image=0x7f0a0013;
+        public static final int filter_two_image=0x7f0a0015;
+        public static final int grey_confession_overlay=0x7f0a0009;
+        public static final int grey_error_message=0x7f0a002d;
+        public static final int header_bar=0x7f0a0001;
+        public static final int header_bar1=0x7f0a0017;
+        public static final int header_logo=0x7f0a0002;
+        public static final int header_logo1=0x7f0a0018;
+        public static final int heart_icon1=0x7f0a0024;
+        public static final int heart_icon_heading1=0x7f0a0025;
+        public static final int icons_container =0x7f0a000a;
+        public static final int list=0x7f0a0028;
+        public static final int logIn=0x7f0a0034;
+        public static final int logInLabel=0x7f0a0035;
+        public static final int logoImage=0x7f0a002b;
+        public static final int menu_button1=0x7f0a0019;
+        public static final int newInput=0x7f0a002f;
+        public static final int okayButton=0x7f0a0031;
+        public static final int photos_icon=0x7f0a000d;
+        public static final int photos_icon_text=0x7f0a0012;
+        public static final int picture_text_container1=0x7f0a001d;
+        public static final int picture_view1=0x7f0a001e;
+        public static final int post_button=0x7f0a0006;
+        public static final int schoolInput=0x7f0a0033;
+        public static final int settings_logo=0x7f0a0026;
+        public static final int spinner=0x7f0a0029;
+        public static final int stack1=0x7f0a0032;
+        public static final int subTitle=0x7f0a002c;
+        public static final int subscribeText=0x7f0a0000;
+        public static final int text_sample_content1=0x7f0a001f;
+        public static final int username_on_card1=0x7f0a0021;
+        public static final int white_frame=0x7f0a000b;
+        public static final int white_frame1=0x7f0a001b;
+        public static final int white_frame_stack=0x7f0a0008;
+        public static final int white_frame_stack1=0x7f0a001c;
     }
     public static final class layout {
         public static final int activity_categories=0x7f030000;
         public static final int activity_compose_page=0x7f030001;
         public static final int activity_inbox_page=0x7f030002;
-        public static final int addschool=0x7f030003;
-        public static final int landingpage1=0x7f030004;
-        public static final int landingpage2=0x7f030005;
+        public static final int activity_settings=0x7f030003;
+        public static final int activity_settings_fragment=0x7f030004;
+        public static final int addschool=0x7f030005;
+        public static final int custom_check_layout=0x7f030006;
+        public static final int landingpage1=0x7f030007;
+        public static final int landingpage2=0x7f030008;
     }
     public static final class menu {
-        public static final int categories=0x7f080000;
-        public static final int compose_page=0x7f080001;
-        public static final int error=0x7f080002;
-        public static final int hello=0x7f080003;
-        public static final int inbox=0x7f080004;
-        public static final int inbox_page=0x7f080005;
-        public static final int main=0x7f080006;
-        public static final int new_view=0x7f080007;
+        public static final int categories=0x7f090000;
+        public static final int compose_page=0x7f090001;
+        public static final int error=0x7f090002;
+        public static final int hello=0x7f090003;
+        public static final int inbox=0x7f090004;
+        public static final int inbox_page=0x7f090005;
+        public static final int main=0x7f090006;
+        public static final int new_view=0x7f090007;
+        public static final int settings=0x7f090008;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
@@ -136,6 +147,7 @@ public final class R {
         public static final int camera_icon=0x7f05002a;
         public static final int camera_icon_text=0x7f05002d;
         public static final int cancel_button=0x7f050024;
+        public static final int category_label=0x7f050036;
         public static final int choose_photo=0x7f05002b;
         public static final int color_icon_text=0x7f05002c;
         public static final int color_of_background=0x7f050029;
@@ -143,6 +155,8 @@ public final class R {
         public static final int confession_text_hint=0x7f050027;
         public static final int confessions_icon=0x7f050019;
         public static final int confessions_icon_heading=0x7f05001d;
+        public static final int confessions_key=0x7f05003c;
+        public static final int confessions_label=0x7f050039;
         public static final int create_a_new_mention=0x7f050017;
         public static final int date_today=0x7f05001c;
         public static final int edittext_hint_label=0x7f050006;
@@ -150,6 +164,7 @@ public final class R {
         public static final int existing_user_label=0x7f05000a;
         public static final int first_filter_image=0x7f050030;
         public static final int fourth_filter_image=0x7f050033;
+        public static final int freq_label=0x7f050037;
         public static final int heart_icon_heading=0x7f05001e;
         public static final int hello_world=0x7f050002;
         public static final int log_in=0x7f050012;
@@ -159,10 +174,16 @@ public final class R {
         public static final int navigation_bar=0x7f050016;
         public static final int new_app=0x7f050003;
         public static final int number_of_likes=0x7f05001a;
+        public static final int overheard_key=0x7f05003d;
+        public static final int overheard_label=0x7f05003a;
         public static final int photo_icon_text=0x7f05002e;
         public static final int post_button=0x7f050025;
         public static final int sample_text=0x7f050018;
         public static final int second_filter_image=0x7f050031;
+        public static final int select=0x7f05003f;
+        public static final int settings_label=0x7f05003e;
+        public static final int spotted_key=0x7f05003b;
+        public static final int spotted_label=0x7f050038;
         public static final int stack_of_picture_frames=0x7f05002f;
         public static final int subTitle=0x7f050004;
         public static final int subscribe_done_button=0x7f050014;
@@ -175,6 +196,8 @@ public final class R {
         public static final int title_activity_inbox=0x7f05001f;
         public static final int title_activity_inbox_page=0x7f050020;
         public static final int title_activity_new_view=0x7f050008;
+        public static final int title_activity_settings=0x7f050034;
+        public static final int title_activity_settings_fragment=0x7f050035;
         public static final int title_activity_view_card=0x7f050007;
         public static final int umentioned_center_logo=0x7f05000f;
         public static final int umentioned_header_icon=0x7f050022;
@@ -205,10 +228,10 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f070000;
+        public static final int AppBaseTheme=0x7f080000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f070001;
+        public static final int AppTheme=0x7f080001;
     }
 }
